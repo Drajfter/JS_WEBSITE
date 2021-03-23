@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>>_</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aleksander Lesiak" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Strona poświęcona Java Script">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="shortcut icon" type="image/x-icon" href="photo/java.png" />
+</head>
+
+<body>
+	<div id="header">
+
+		<div id="photo">
+			<img src="photo/java.png" alt="Zdjęcie" id="java_logo">
+		</div>
+
+		<div id="logo_box">
+		
+			<div id="java">
+				<h1>Java</h1>
+			</div>
+			
+			<div id="script">
+				<h1 style="">script</h1>
+			</div>
+		</div>
+
+		<div id="clock">
+
+			<output id="godzina">00:00:00</output><br>
+			<output id="pdata">00/00/0000</output>
+			
+		</div>
+
+	</div>
+
+	<div id="menu">
+
+		<a href="index.html">
+			<div class="MENU">
+				<b> Strona Główna </b>
+			</div>
+		</a>
+
+		<a href="index_polecenia.html">
+			<div class="MENU">
+				<b> Polecenia </b>
+			</div>
+		</a>
+
+		<a href="index_srednia.html">
+			<div class="MENU">
+				<b> Średnia </b>
+			</div>
+		</a>
+
+		<a href="index_szescian.html">
+			<div class="MENU">
+				<b> Sześcian </b>
+			</div>
+		</a>
+
+		<a href="index_koszty.html">
+			<div class="MENU">
+				<b> Koszty Wycieczki </b>
+			</div>
+		</a>
+
+		<a href="index_dodatkowe.html">
+			<div class="MENU">
+				<b> Dodatkowe </b>
+			</div>
+		</a>
+		
+	</div>
+
+	<div id="main_polecenia">
+
+		<div id="header_box">
+
+			<div id="polecenia_header_center">
+				<h1 class="polecenia_h1">POLECENIA</h1>
+			</div>
+
+			<div id="polecenia_header_left">
+				<h1 class="polecenia_h1">.</h1>
+			</div>
+
+			<div id="polecenia_header_right">
+				<h1 class="polecenia_h1">.</h1>
+			</div>
+
+		</div>
+
+		<div class="polecenie1_header">
+			<h1 class="polecenia_h1_srednia">SZEŚCIAN</h1>
+		</div>
+		<div id="polecenie1_under_header">
+			<h1 class="polecenia_h1">.</h1>
+		</div>
+
+		<div class="srednia_box">
+
+			<div id="podane_box">
+				<h2 class="margin20">Obliczanie sześcianu liczby</h2>
+			</div>
+
+			<div id="wynik_box">
+				<table>
+					<tr>
+      					<th>Liczba</th> <th>Sześcian liczby</th>
+   					</tr>
+   					<tr>
+      					<td>1</td> <td id="wiersz1">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>2</td> <td id="wiersz2">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>3</td> <td id="wiersz3">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>4</td> <td id="wiersz4">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>5</td> <td id="wiersz5">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>6</td> <td id="wiersz6">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>7</td> <td id="wiersz7">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>8</td> <td id="wiersz8">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>9</td> <td id="wiersz9">?</td>
+   					</tr>
+
+   					<tr>
+      					<td>10</td> <td id="wiersz10">?</td>
+   					</tr>
+				</table>
+			</div>
+
+			<div id="buttons">
+				<p class="margin20"> Kliknij oblicz w celu zobaczenia wyników.</p>
+
+			<button onclick="oblicz()">Oblicz</button>
+			<button onclick="schowaj()">Schowaj</button>
+			</div>
+		</div>
+
+	    <div id="stopka">
+    		Wszelkie prawa zastrzeżone. Opracował: Aleksander Lesiak<br>
+    		<output id="lastmod">Ostatnio modyfikowano: kiedyś napewno</output>
+    	</div>
+    </div>
+
+<script>
+	function oblicz() {
+
+	for (var i = 0; i <= 10; i++) {
+
+		var potega = Math.pow(i, 3);
+
+		switch(i){
+
+            case 1:
+                		wiersz1.innerHTML=potega;
+            break
+            case 2:
+                		wiersz2.innerHTML=potega;
+            break
+            case 3:
+                		wiersz3.innerHTML=potega;
+            break
+            case 4:
+                		wiersz4.innerHTML=potega;
+            break
+            case 5:
+                		wiersz5.innerHTML=potega;
+            break
+            case 6:
+                		wiersz6.innerHTML=potega;
+            break
+            case 7:
+                		wiersz7.innerHTML=potega;
+            break
+            case 8:
+                		wiersz8.innerHTML=potega;
+            break
+            case 9:
+                		wiersz9.innerHTML=potega;
+            break
+            case 10:
+                		wiersz10.innerHTML=potega;
+            break
+        default:
+
+                wiersz1.innerHTML="ERROR"
+                }
+	}
+	}
+	function schowaj() {
+
+	for (var i = 0; i <= 10; i++) {
+
+		var potega = "?"
+
+		switch(i){
+
+            case 1:
+                		wiersz1.innerHTML=potega;
+            break
+            case 2:
+                		wiersz2.innerHTML=potega;
+            break
+            case 3:
+                		wiersz3.innerHTML=potega;
+            break
+            case 4:
+                		wiersz4.innerHTML=potega;
+            break
+            case 5:
+                		wiersz5.innerHTML=potega;
+            break
+            case 6:
+                		wiersz6.innerHTML=potega;
+            break
+            case 7:
+                		wiersz7.innerHTML=potega;
+            break
+            case 8:
+                		wiersz8.innerHTML=potega;
+            break
+            case 9:
+                		wiersz9.innerHTML=potega;
+            break
+            case 10:
+                		wiersz10.innerHTML=potega;
+            break
+        default:
+
+                wiersz1.innerHTML="ERROR"
+                }
+	}
+	}
+</script>
+
+<script>
+	lastmod.innerHTML = "Ostatnio modyfikowano: " + document.lastModified
+</script>
+    	
+<script>
+              let data1=new Date();
+              var x = data1.getFullYear();
+              var y = data1.getMonth() + 1;
+              var z = data1.getDate();
+              pdata.innerHTML = ("0" + z).substr(-2) + "/" + ("0" + y).substr(-2) + "/" + ("0" + x).substr(-2);
+</script>
+
+<script>
+		function time() {
+              let data=new Date();
+              var s = data.getSeconds();
+              var m = data.getMinutes();
+              var h = data.getHours();
+              godzina.innerHTML = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+        }
+            
+            setInterval(time, 100);
+</script>
+
+<script>
+	if (document.addEventListener) {
+    	document.addEventListener("DOMContentLoaded", function() {
+        loaded();
+    	});
+	} else if (document.attachEvent) {
+    	document.attachEvent("onreadystatechange", function() {
+        loaded();
+    	});
+	}
+
+	function loaded() {
+
+    	setInterval(loop, 300);
+	}
+
+	var x = 0;
+	var y = 0;
+
+	var titleText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JA_",
+	"> JAV_",
+	"> JAVA_",
+	"> JAVA _",
+	"> JAVA S_",
+	"> JAVA SC",
+	"> JAVA SCR_",
+	"> JAVA SCRI",
+	"> JAVA SCRIP_",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIP_",
+	"> JAVA SCRI_",
+	"> JAVA SCR_",
+	"> JAVA SC_",
+	"> JAVA S_",
+	"> JAVA _",
+	"> JAVA_",
+	"> JAV_",
+	"> JA_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	">"];
+
+	var jsText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> "];
+
+	function loop() {
+
+    document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+	}
+</script>
+
+</body>
+
+</html>

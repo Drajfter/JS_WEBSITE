@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>>_</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aleksander Lesiak" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Strona poświęcona Java Script">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="shortcut icon" type="image/x-icon" href="photo/java.png" />
+</head>
+
+<body>
+	<div id="header">
+
+		<div id="photo">
+			<img src="photo/java.png" alt="Zdjęcie" id="java_logo">
+		</div>
+
+		<div id="logo_box">
+		
+			<div id="java">
+				<h1>Java</h1>
+			</div>
+			
+			<div id="script">
+				<h1 style="">script</h1>
+			</div>
+		</div>
+
+		<div id="clock">
+
+			<output id="godzina">00:00:00</output><br>
+			<output id="pdata">00/00/0000</output>
+			
+		</div>
+
+	</div>
+
+	<div id="menu">
+
+		<a href="index.html">
+			<div class="MENU">
+				<b> Strona Główna </b>
+			</div>
+		</a>
+
+		<a href="index_polecenia.html">
+			<div class="MENU">
+				<b> Polecenia </b>
+			</div>
+		</a>
+
+		<a href="index_srednia.html">
+			<div class="MENU">
+				<b> Średnia </b>
+			</div>
+		</a>
+
+		<a href="index_szescian.html">
+			<div class="MENU">
+				<b> Sześcian </b>
+			</div>
+		</a>
+
+		<a href="index_koszty.html">
+			<div class="MENU">
+				<b> Koszty Wycieczki </b>
+			</div>
+		</a>
+
+		<a href="index_dodatkowe.html">
+			<div class="MENU">
+				<b> Dodatkowe </b>
+			</div>
+		</a>
+		
+	</div>
+
+	<div id="main_polecenia">
+
+		<div id="header_box">
+
+			<div id="polecenia_header_center">
+				<h1 class="polecenia_h1">POLECENIA</h1>
+			</div>
+
+			<div id="polecenia_header_left">
+				<h1 class="polecenia_h1">.</h1>
+			</div>
+
+			<div id="polecenia_header_right">
+				<h1 class="polecenia_h1">.</h1>
+			</div>
+
+		</div>
+
+		<div class="polecenie1_header">
+			<h1 class="polecenia_h1_srednia">ZADANIE DODATKOWE</h1>
+		</div>
+		<div id="polecenie1_under_header">
+			<h1 class="polecenia_h1">.</h1>
+		</div>
+
+		<div class="srednia_box">
+
+			<div id="podane_box">
+				<h2 class="margin20">Obliczanie sześcianu liczby</h2>
+			</div>
+
+			<div id="dodatkowe_box">
+				<table>
+					<tr>
+      					<th>Podaj liczby</th> <th>Wczytane liczby</th><th>Liczby rosnąco</th><th>   X<sup>2</sup>   </th>
+   					</tr>
+   					<tr>
+      					<td><input type="number" id="input1"></td> <td id="k1wiersz1">?</td></td> <td id="k2wiersz1">?</td></td> <td id="k3wiersz1">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input2"></td> <td id="k1wiersz2">?</td></td> <td id="k2wiersz2">?</td></td> <td id="k3wiersz2">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input3"></td> <td id="k1wiersz3">?</td></td> <td id="k2wiersz3">?</td></td> <td id="k3wiersz3">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input4"></td> <td id="k1wiersz4">?</td></td> <td id="k2wiersz4">?</td></td> <td id="k3wiersz4">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input5"></td> <td id="k1wiersz5">?</td></td> <td id="k2wiersz5">?</td></td> <td id="k3wiersz5">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input6"></td> <td id="k1wiersz6">?</td></td> <td id="k2wiersz6">?</td></td> <td id="k3wiersz6">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input7"></td> <td id="k1wiersz7">?</td></td> <td id="k2wiersz7">?</td></td> <td id="k3wiersz7">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input8"></td> <td id="k1wiersz8">?</td></td> <td id="k2wiersz8">?</td></td> <td id="k3wiersz8">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input9"></td> <td id="k1wiersz9">?</td></td> <td id="k2wiersz9">?</td></td> <td id="k3wiersz9">?</td>
+   					</tr>
+
+   					<tr>
+      					<td><input type="number" id="input10"></td> <td id="k1wiersz10">?</td></td> <td id="k2wiersz10">?</td></td> <td id="k3wiersz10">?</td>
+   					</tr>
+				</table>
+			</div>
+
+			<div id="buttons_koszty">
+				<p class="margin20"> Kliknij oblicz w celu zobaczenia wyników.</p>
+
+			<button onclick="oblicz()">Oblicz</button>
+			<button onclick="schowaj()">Resetuj</button>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">Średnia wartość: </h2>
+				<h2 class="margin20"><output id="output1"></output></h2>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">Najmniejsza wartość: </h2>
+				<h2 class="margin20"><output id="output2"></output></h2>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">Największa wartość: </h2>
+				<h2 class="margin20"><output id="output3"></output></h2>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">Cyfra 3 występuje w ilości: </h2>
+				<h2 class="margin20"><output id="output4"></output></h2>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">3 Najmniejsze warość: </h2>
+				<h2 class="margin20"><output id="output5"></output></h2>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">3 Największe wartości: </h2>
+				<h2 class="margin20"><output id="output6"></output></h2>
+			</div>
+
+			<div class="outputs" id="last">
+				<h2 class="margin20">Liczby podzielne przez 3 występują w ilości: </h2>
+				<h2 class="margin20"><output id="output7"></output></h2>
+			</div>
+
+		</div>
+
+	    <div id="stopka">
+    		Wszelkie prawa zastrzeżone. Opracował: Aleksander Lesiak<br>
+    		<output id="lastmod">Ostatnio modyfikowano: kiedyś napewno</output>
+    	</div>
+    </div>
+
+<script>
+
+	let licznik3 = 0;
+	let licznik_dzielenia3 = 0;
+	let i = 1;
+	let k = 1;
+
+	/*
+	input1.value = 1;
+	input2.value = 20;
+	input3.value = -3;
+	input4.value = 2;
+	input5.value = 5;
+	input6.value = -61;
+	input7.value = 7;
+	input8.value = 85;
+	input9.value = 3;
+	input10.value = 30;
+	*/
+
+	function oblicz() {
+		let tablica = [input1.value, input2.value, input3.value, input4.value, input5.value, input6.value, input7.value, input8.value, input9.value, input10.value]
+
+		tablica.forEach(function(item, index, array) {
+			document.getElementById('k1wiersz'+k).innerHTML = item;
+			k = k+1;
+		})
+
+			k = 1;
+
+  		output1.innerHTML = (tablica.reduce((a, b) => a - -b, 0)/tablica.length)
+
+		tablica.sort(compareNumbers);
+
+		output2.innerHTML = tablica[0];
+
+		output3.innerHTML = tablica[tablica.length - 1];
+
+		tablica.forEach(function(item, index, array) {
+			if ( item == 3 ) {
+  				licznik3 = licznik3 + 1
+  			}
+		})
+
+		output4.innerHTML = licznik3;
+
+		output5.innerHTML = tablica[0]+", "+tablica[1]+", "+tablica[2]
+
+		output6.innerHTML = tablica[tablica.length - 1]+", "+tablica[tablica.length - 2]+", "+tablica[tablica.length - 3]
+
+		tablica.forEach(function(item, index, array) {
+			if ( item % 3 == 0 && item != 0) {
+  				licznik_dzielenia3 = licznik_dzielenia3 + 1;
+  				i = i+1;
+  			}
+		})
+
+		output7.innerHTML = licznik_dzielenia3;
+
+		//TABELA
+
+		tablica.forEach(function(item, index, array) {
+			document.getElementById('k2wiersz'+k).innerHTML = item;
+			k = k+1;
+		})
+
+			k = 1;
+
+		tablica.forEach(function(item, index, array) {
+			document.getElementById('k3wiersz'+k).innerHTML = (item*item);
+			k = k+1;
+		})
+
+		 	licznik3 = 0;
+			licznik_dzielenia3 = 0;
+			i = 1;
+			k = 1;
+	}
+
+	function compareNumbers(a, b) {
+  		return a - b;
+	}
+
+	function schowaj() {
+		let tablica = [input1.value, input2.value, input3.value, input4.value, input5.value, input6.value, input7.value, input8.value, input9.value, input10.value]
+
+		tablica.forEach(function(item, index, array) {
+			document.getElementById('k2wiersz'+k).innerHTML = "?";
+			k = k+1;
+		})
+
+			k = 1;
+
+		tablica.forEach(function(item, index, array) {
+			document.getElementById('k3wiersz'+k).innerHTML = "?";
+			k = k+1;
+		})
+
+			k = 1;
+
+		tablica.forEach(function(item, index, array) {
+			document.getElementById('k1wiersz'+k).innerHTML = "?";
+			k = k+1;
+		})
+
+			k = 1;
+
+		for (var i = 1; i <= 7; i++) {
+			document.getElementById('output'+i).innerHTML = " ";
+		}
+		for (var i = 1; i <= 10; i++) {
+			document.getElementById('input'+i).value = " ";
+		}
+	}
+
+</script>
+
+<script>
+	lastmod.innerHTML = "Ostatnio modyfikowano: " + document.lastModified
+</script>
+    	
+<script>
+              let data1=new Date();
+              var x = data1.getFullYear();
+              var y = data1.getMonth() + 1;
+              var z = data1.getDate();
+              pdata.innerHTML = ("0" + z).substr(-2) + "/" + ("0" + y).substr(-2) + "/" + ("0" + x).substr(-2);
+</script>
+
+<script>
+		function time() {
+              let data=new Date();
+              var s = data.getSeconds();
+              var m = data.getMinutes();
+              var h = data.getHours();
+              godzina.innerHTML = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+        }
+            
+            setInterval(time, 100);
+</script>
+
+<script>
+	if (document.addEventListener) {
+    	document.addEventListener("DOMContentLoaded", function() {
+        loaded();
+    	});
+	} else if (document.attachEvent) {
+    	document.attachEvent("onreadystatechange", function() {
+        loaded();
+    	});
+	}
+
+	function loaded() {
+
+    	setInterval(loop, 300);
+	}
+
+	var x = 0;
+	var y = 0;
+
+	var titleText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JA_",
+	"> JAV_",
+	"> JAVA_",
+	"> JAVA _",
+	"> JAVA S_",
+	"> JAVA SC",
+	"> JAVA SCR_",
+	"> JAVA SCRI",
+	"> JAVA SCRIP_",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIP_",
+	"> JAVA SCRI_",
+	"> JAVA SCR_",
+	"> JAVA SC_",
+	"> JAVA S_",
+	"> JAVA _",
+	"> JAVA_",
+	"> JAV_",
+	"> JA_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	">"];
+
+	var jsText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> "];
+
+	function loop() {
+
+    document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+	}
+</script>
+
+</body>
+
+</html>

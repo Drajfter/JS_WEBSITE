@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>>_</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aleksander Lesiak" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Strona poświęcona Java Script">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="shortcut icon" type="image/x-icon" href="photo/java.png" />
+
+</head>
+
+<body>
+	<div id="header">
+
+		<div id="photo">
+			<img src="photo/java.png" alt="Zdjęcie" id="java_logo">
+		</div>
+
+		<div id="logo_box">
+		
+			<div id="java">
+				<h1>Java</h1>
+			</div>
+			
+			<div id="script">
+				<h1 style="">script</h1>
+			</div>
+		</div>
+
+		<div id="clock">
+
+			<output id="godzina">00:00:00</output><br>
+			<output id="pdata">00/00/0000</output>
+			
+		</div>
+
+	</div>
+
+	<div id="menu">
+
+		<a href="index.html">
+			<div class="MENU">
+				<b> Strona Główna </b>
+			</div>
+		</a>
+
+		<a href="index_polecenia.html">
+			<div class="MENU">
+				<b> Polecenia </b>
+			</div>
+		</a>
+
+		<a href="index_srednia.html">
+			<div class="MENU">
+				<b> Średnia </b>
+			</div>
+		</a>
+
+		<a href="index_szescian.html">
+			<div class="MENU">
+				<b> Sześcian </b>
+			</div>
+		</a>
+
+		<a href="index_koszty.html">
+			<div class="MENU">
+				<b> Koszty Wycieczki </b>
+			</div>
+		</a>
+		
+		<a href="index_dodatkowe.html">
+			<div class="MENU">
+				<b> Dodatkowe </b>
+			</div>
+		</a>
+
+	</div>
+
+	<div id="main_polecenia">
+
+		<div id="header_box">
+
+			<div id="polecenia_header_center">
+				<h1 class="polecenia_h1">POLECENIA</h1>
+			</div>
+
+			<div id="polecenia_header_left">
+				<h1 class="polecenia_h1">.</h1>
+			</div>
+
+			<div id="polecenia_header_right">
+				<h1 class="polecenia_h1">.</h1>
+			</div>
+
+		</div>
+
+		<div class="polecenie1_header">
+			<h1 class="polecenia_h1_srednia">KOSZTY WYCIECZKI</h1>
+		</div>
+		<div id="polecenie1_under_header">
+			<h1 class="polecenia_h1">.</h1>
+		</div>
+
+		<div class="srednia_box">
+
+			<div id="podane_box">
+				<h2 class="margin20">Oblicz koszty swojej wycieczki</h2>
+						<p class="margin20"> Wypełnij poniżesze pola i kliknij oblicz w celu zobaczenia kosztów.</p>
+			</div>
+
+	
+
+			<div class="inputs">
+				<p class="margin20"> Data przyjazdu:</p>
+				<input type="date" name="data_przyjazdu" id="data_przyjazdu">
+			</div>
+
+			<div class="inputs">
+				<p class="margin20"> Data wyjazdu:</p>
+				<input type="date" name="data_wyjazdu" id="data_wyjazdu">
+			</div>
+
+			<div class="inputs">
+				<p class="margin20"> Liczba uczestników:</p>
+				<input type="number" name="Liczba_uczestnikow" id="liczba_uczestnikow">
+			</div>
+
+			<div class="inputs">
+				<p class="margin20"> Koszt za dobę na osobę:</p>
+				<input type="number" name="koszt_dobowy" id="koszt_dobowy">
+			</div>
+
+			<div class="inputs">
+				<p class="margin20"> Koszt autokatu:</p>
+				<input type="number" name="koszt_autokaru" id="koszt_autokaru">
+			</div>
+
+			<div id="buttons_koszty">
+				<button onclick="oblicz()">Oblicz</button>
+				<button onclick="restart()">Resetuj</button>
+			</div>
+
+			<div class="outputs">
+				<h2 class="margin20">Całościowy koszt wycieczki wynosi: </h2>
+				<h2 class="margin20"><output id="koszt_calkowity"></output></h2>
+			</div>
+
+			<div class="outputs" id="last">
+				<h2 class="margin20">Koszt wycieczki dla jednej osoby wynosi: </h2>
+				<h2 class="margin20"><output id="koszt_osobowy"></output></h2>
+			</div>
+
+			<div class="polecenie1_header">
+			<h1 class="polecenia_h1_srednia">CIEKAWE KIERUNKI</h1>
+		</div>
+		<div id="polecenie1_under_header">
+			<h1 class="polecenia_h1">.</h1>
+		</div>
+
+			<div id="podane_box">
+				<h2 class="margin20">Jeszcze nie wiesz gdzie wyruszyć w podróż? <br><br> Zobacz nasze propozycje!</h2>
+			</div>
+
+			<div class="kierunki_box">
+				<h2 class="margin20">Albania</h2>
+				<img class="kierunki_img" src="photo/albania.jpg">
+				<p class="margin20"> Wszystkie ciekawe kierunki podróży w Europie okupowane są przez masy turystów. Hm, na pewno wszystkie? Nie! Jeden mały kraj nadal stawia opór. A w przypadku Albanii to po prostu grzech, że tak mało gości przybija do jej pięknych brzegów. Ten zadziwiający kraj ze swym adriatyckim wybrzeżem to coś dla urodzonych romantyków. Niebo i ziemię łączą tu monumentalne góry, plaże lśnią w słońcu, iskrzy się woda, a wspaniałe, choć nadszarpnięte zębem czasu miasta, przywołują na myśl perypetie bohaterów powieści przygodowych. Odwiedzając Szkodrę, zatrzymaj się w pięknie odrestaurowanej willi o nazwie Rose Garden Hotel w starej części miasta. Przez gości miejsce to oceniane jest jako doskonałe i zbiera bardzo entuzjastyczne recenzje.</p>
+			</div>
+
+			<div class="kierunki_box">
+				<h2 class="margin20">Laos</h2>
+				<p class="margin20"> Daleki Wschód czeka! Te słowa brzmiały kiedyś tak egzotycznie… A teraz… a teraz, prawdę mówiąc, nadal brzmią dość egzotycznie… Choć pobyt w Tajlandii stał się czymś w rodzaju rytuału dla niemal co trzeciego młodego Europejczyka, Laos pozostał praktycznie nietknięty i wyprawa do niego to relaks, jakiego pewnie nie znajdzie się już w wielu miejscach na świecie. Tajlandia ma co prawda plaże, ale Laos ma rzekę Mekong. Weźmy na przykład Louangphrabang – to królewskie miasto otoczone porosłymi dżunglą górami położone jest nad brzegiem Mekongu i stanowi oazę spokoju. Aura odprężenia udziela się tu natychmiast, nieważne, czy podczas jazdy na rowerze po ulicach miasta, zwiedzania świątyń, kąpieli w rzece Mekong, czy kiedy się akurat naśladuje życie buddyjskiego mnicha pod kwitnącymi drzewami bugenwilli.</p>
+				<img class="kierunki_img" src="photo/laos.jpg">
+			</div>
+
+			<div class="kierunki_box" id="last">
+				<h2 class="margin20">Uzbekistan</h2>
+				<img class="kierunki_img" src="photo/uzbekistan.jpg">
+				<p class="margin20"> Z wiatrem pędź, tam gdzie sześć i sześć? Naprawdę trzeba po to lecieć aż do USA? To znaczy, rzeczywiście jest to legendarna trasa, ale co powiecie na starożytny Jedwabny Szlak? Jest od niej o ponad dwa tysiące lat starszy i kilka tysięcy kilometrów dłuższy, a podziwiając zapierające dech w piersiach widoki i zabytki z zarania dziejów, będziecie bardzo zadowoleni, że wybraliście się w tę trasę. Jeden z przykładów takich wspaniałych starożytnych zespołów historycznych odwiedzić można na znajdującym się w Samarkandzie placu Registan, na który rzucają cień trzy wielkie jak monolity muzułmańskie szkoły, zwane medresami. Podarujcie sobie odrobinę luksusu, nie rujnując przy tym portfela i zatrzymajcie się w hotelu Royal Palace.</p>
+			</div>
+
+			<a href="https://www.kayak.pl/news/nieznane-i-niedoceniane-miejsca/" target="blank"><h2 id="find_more" class="margin20">Dalej szukasz? Zobacz więcej propozycji tutaj!</h2></a>
+
+		<div id="stopka">
+    		Wszelkie prawa zastrzeżone. Opracował: Aleksander Lesiak<br>
+    		<output id="lastmod">Ostatnio modyfikowano: kiedyś napewno</output>
+    	</div>
+
+		</div>
+
+
+	    
+
+
+    </div>
+
+<script>
+	function oblicz() {
+
+	const data_przy = new Date(data_przyjazdu.value);
+	const data_wy = new Date(data_wyjazdu.value);
+	const diff_Time = Math.abs(data_wy - data_przy);
+	const diff_Days = Math.ceil(diff_Time / (1000 * 60 * 60 * 24));
+	console.log(data_przy);
+	console.log(data_wy);
+	console.log(diff_Days + " days");
+
+
+	var koszt_cal = diff_Days * liczba_uczestnikow.value * koszt_dobowy.value - -koszt_autokaru.value;
+	var koszt_osb = (diff_Days * liczba_uczestnikow.value * koszt_dobowy.value - -koszt_autokaru.value) / liczba_uczestnikow.value;
+
+	console.log(liczba_uczestnikow.value);
+	console.log(koszt_dobowy.value);
+	console.log(koszt_autokaru.value);
+
+	console.log(koszt_cal);
+
+	koszt_calkowity.innerHTML = koszt_cal+" zł";
+	koszt_osobowy.innerHTML = koszt_osb+" zł";
+	}
+
+	function restart() {
+		koszt_calkowity.innerHTML = " ";
+		koszt_osobowy.innerHTML = " ";
+		liczba_uczestnikow.value = " ";
+		koszt_dobowy.value = " ";
+		koszt_autokaru.value = " ";
+		data_przyjazdu.value = " ";
+		data_wyjazdu.value = " ";
+	}
+</script>
+
+<script>
+	lastmod.innerHTML = "Ostatnio modyfikowano: " + document.lastModified
+</script>
+    	
+<script>
+              let data1=new Date();
+              var x = data1.getFullYear();
+              var y = data1.getMonth() + 1;
+              var z = data1.getDate();
+              pdata.innerHTML = ("0" + z).substr(-2) + "/" + ("0" + y).substr(-2) + "/" + ("0" + x).substr(-2);
+</script>
+
+<script>
+		function time() {
+              let data=new Date();
+              var s = data.getSeconds();
+              var m = data.getMinutes();
+              var h = data.getHours();
+              godzina.innerHTML = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+        }
+            
+            setInterval(time, 100);
+</script>
+
+<script>
+	if (document.addEventListener) {
+    	document.addEventListener("DOMContentLoaded", function() {
+        loaded();
+    	});
+	} else if (document.attachEvent) {
+    	document.attachEvent("onreadystatechange", function() {
+        loaded();
+    	});
+	}
+
+	function loaded() {
+
+    	setInterval(loop, 300);
+	}
+
+	var x = 0;
+	var y = 0;
+
+	var titleText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JA_",
+	"> JAV_",
+	"> JAVA_",
+	"> JAVA _",
+	"> JAVA S_",
+	"> JAVA SC",
+	"> JAVA SCR_",
+	"> JAVA SCRI",
+	"> JAVA SCRIP_",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIP_",
+	"> JAVA SCRI_",
+	"> JAVA SCR_",
+	"> JAVA SC_",
+	"> JAVA S_",
+	"> JAVA _",
+	"> JAVA_",
+	"> JAV_",
+	"> JA_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	">"];
+
+	var jsText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> "];
+
+	function loop() {
+
+    document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+	}
+</script>
+
+</body>
+
+</html>

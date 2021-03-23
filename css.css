@@ -1,0 +1,500 @@
+:root{
+  --circleside: 20%;
+  --circlecolor: #5B5B5B;
+}
+body{
+  margin: auto;
+  background-color: black; 
+  color: white; font-family: Arial; 
+  max-width: 1645px; 
+  text-align: center;
+}
+button { 
+  width: 100px; 
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: #f79817;
+  color: black;
+  outline: 2px solid black;
+  transition: outline-offset 200ms ease;
+}
+button:hover {
+  outline: 2px solid black;
+  outline-offset: -6px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#header{
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#java_logo{
+  height: 120px;
+  padding: 5px;
+}
+#logo_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#java{
+  text-align: right;
+  display: inline-block;
+}
+#java h1{
+  padding: 5px;  
+  margin: 0px;
+}
+#script{
+  color: black;
+  text-align: left;
+  display: inline-block;
+
+}
+#script h1{
+  padding: 5px; 
+  background-color: #f79817; 
+  border-radius: 15px;
+  margin: 0px;
+}
+#clock{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 130px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+#clock:hover #pdata{ 
+  color: white;
+  cursor: none;
+}
+#clock:hover { 
+  cursor: none;
+}
+#clock:hover #godzina{ 
+  padding-bottom: 30px;
+  margin-top: 20px;
+
+}
+
+#godzina{
+  margin-top: 27px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 7px;
+  transition: all 200ms ease;
+  outline: solid black;
+  outline-width: 10px;
+  outline-offset: -3px;
+  z-index: 1;
+}
+#pdata{
+  margin-top: -83px;
+  color: black;
+}
+#menu{
+  width: 100%;
+  float: left;
+  background-color: #f79817;
+}
+
+.MENU{
+  text-align: center;
+  width: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-color: black;
+  border-width: 5px;
+  border-style: dashed;
+  margin: 10px;
+  z-index: 0;
+  transition: all 700ms ease;
+  border-bottom-color: #f79817;
+  border-top-color: #f79817;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  font-size: 18px;
+}
+.MENU:hover{
+  transform: scale(1.1, 1.1);
+  background-color: #f79817;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.60);
+  border-style: solid;
+
+}
+
+#mainbg{
+  float: left ;
+  background-image: url(photo/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+#mainbg h1{
+  margin: 0px;
+}
+#main1{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: var(--circleside);
+  text-align: center;
+  background-color: var(--circlecolor);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  float: left;
+  line-height: 50px;
+  text-shadow: 0px 0px 30px black;
+}
+#main1_top_h1{
+  padding-top: 100px;
+}
+
+#main2{
+  font-size: 20px;
+  margin-top: 225px;
+  margin-right: var(--circleside);
+  text-align: center;
+  background-color: var(--circlecolor);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  float: right;
+  line-height: 50px;
+  text-shadow: 0px 0px 30px black;
+}
+#main2_top_h1{
+  padding-top: 50px;
+}
+#main3{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: var(--circleside);
+  text-align: center;
+  background-color: var(--circlecolor);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  float: left;
+  line-height: 50px;
+  margin-bottom: 50px;
+  text-shadow: 0px 0px 30px black;
+}
+#main3_top_h1{
+  padding-top: 50px;
+}
+#stopka_main{
+  background-color: rgba(0, 0, 0, 0.60);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  float: left;
+}
+
+/*CSS POLECENIA*/
+
+#main_polecenia{
+  background-image: url(photo/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#header_box{
+  display: flex; 
+  flex-wrap: 
+  wrap; width: 100%
+}
+#polecenia_header_center{
+  width: 100%; 
+  background-color: #5B5B5B; 
+  margin-top: 50px;  
+  text-shadow: 0px 0px 30px black; 
+  z-index: 5;
+}
+#polecenia_header_left{
+  transform: skewY(4deg);
+  width: 50%;
+  background-color: #5B5B5B;
+  margin-top: -75px;
+  color: #5B5B5B;
+}
+#polecenia_header_right{
+  transform: skewY(-4deg);
+  width: 50%;
+  background-color: #5B5B5B;
+  margin-top: -75px;
+  color: #5B5B5B;
+}
+.polecenia_h1{
+  padding: 13px;
+}
+.polecenia_h1_srednia{
+  padding: 13px;
+  margin-top: 0px;
+}
+.polecenie1_header{
+  transform: skewY(4deg);
+  width: 100%;
+  background-color: #f79817;
+  margin-top: 65px;
+  color: black;
+}
+#polecenie1_under_header{
+  transform: skewY(4deg);
+  width: 100%;
+  background-color: black;
+  margin-top: -22px;
+  color: black;
+}
+.under_header{
+  width: 100%;
+  background-color: black;
+  color: black;
+}
+.polecenie_box{
+  margin-top: -80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.polecenie_box p{
+margin-top: 100px;
+margin-bottom: 200px;
+width: 50%;
+}
+.polecenie_box h2{
+margin-top: 100px;
+width: 100%;
+}
+#stopka{
+  background-color: black;
+  border-top-style: solid;
+  border-top-color: #f79817;
+  border-bottom-style: solid;
+  border-bottom-color: #f79817;
+  margin-bottom: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+/*CSS ŚREDNIA*/
+
+.srednia_box{
+  margin-top: -80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.srednia_box p{
+color: white;
+
+}
+.srednia_box h2{
+color: white;
+}
+.srednia_box button{
+  margin: 20px;
+}
+#inputs{
+  margin: 20px;
+  width: 100%;
+}
+#podane_box{
+  width: 70%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#podane_box p{
+  width: 100%;
+}
+.margin20{
+  margin-top: 20px;
+}
+#wynik_box{
+  width: 70%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#wynik_box p{
+  width: 100%; 
+}
+#liczba{
+  width: 100px; 
+  margin: 20px;
+
+}
+#buttons{
+  width: 70%; 
+  margin-bottom: 100px;
+}
+
+/*CSS SZEŚCIAN*/
+
+table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  text-align: center;
+
+}
+
+/*CSS KOSZTY WYCIECZKI*/
+.inputs{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inputs p{
+  margin: 20px;
+}
+.inputs input{
+  width: 200px;
+  margin: 20px;
+}
+#buttons_koszty{
+  width: 100%; 
+}
+#last{
+  margin-bottom: 100px;
+}
+.outputs{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.kierunki_box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.kierunki_box p{
+  width: max(45%, 450px);
+  padding: 20px;
+}
+.kierunki_box h2{
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  font-style: oblique;
+}
+.kierunki_img{
+  width: max(45%, 450px);
+  padding: 20px;
+}
+#find_more{
+  margin-bottom: 100px;
+  transition: all 700ms ease;
+}
+#find_more:hover{
+  color: #f79817;
+}
+
+
+/*CSS ZADANIE DODATKOWE*/
+
+#dodatkowe_box{
+  width: 70%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+}
+#dodatkowe_box input{
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px;
+  font-size: 15px;
+  width: 140px;
+
+}
+#dodatkowe_box th, td{
+max-width: 200px;
+
+}
+
+@media (max-width: 1017px) {
+  #main2{
+        margin: 0 auto;
+        margin-top: 50px;
+        float: none;
+        }
+  #main1{
+        margin: 0 auto;
+        margin-top: 50px;
+        float: none;
+        }
+  #main3{
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        float: none;
+        }
+}
+
+@media (max-width: 481px) {
+  .inputs p{
+    margin: 20px;
+    width: 100%;
+    }
+}

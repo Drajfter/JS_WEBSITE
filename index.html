@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>>_</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aleksander Lesiak" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Strona poświęcona Java Script">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="shortcut icon" type="image/x-icon" href="photo/java.png" />
+</head>
+
+<body>
+	<div id="header">
+
+		<div id="photo">
+			<img src="photo/java.png" alt="Zdjęcie" id="java_logo">
+		</div>
+
+		<div id="logo_box">
+		
+			<div id="java">
+				<h1>Java</h1>
+			</div>
+			
+			<div id="script">
+				<h1>script</h1>
+			</div>
+		</div>
+
+		<div id="clock">
+
+			<output id="godzina">00:00:00</output><br>
+			<output id="pdata">00/00/0000</output>
+			
+		</div>
+
+	</div>
+
+	<div id="menu">
+
+		<a href="index.html">
+			<div class="MENU">
+				<b> Strona Główna </b>
+			</div>
+		</a>
+
+		<a href="index_polecenia.html">
+			<div class="MENU">
+				<b> Polecenia </b>
+			</div>
+		</a>
+
+		<a href="index_srednia.html">
+			<div class="MENU">
+				<b> Średnia </b>
+			</div>
+		</a>
+
+		<a href="index_szescian.html">
+			<div class="MENU">
+				<b> Sześcian </b>
+			</div>
+		</a>
+
+		<a href="index_koszty.html">
+			<div class="MENU">
+				<b> Koszty Wycieczki </b>
+			</div>
+		</a>
+
+		<a href="index_dodatkowe.html">
+			<div class="MENU">
+				<b> Dodatkowe </b>
+			</div>
+		</a>
+		
+	</div>
+
+	<div id="mainbg">
+    
+    <div id="main1">
+
+    	<h1 id="main1_top_h1">Witaj</h1>
+    	<h1 id="imie">IMIE</h1>
+    	
+    </div>
+
+    <div id="main2">
+    	<h1 id="main2_top_h1">Strona</h1>
+    	<h1> poświęcona językowi </h1>
+    	<h1 id="js"> >JS </h1>
+    </div>
+
+    <div id="main3">
+    	<h1 id="main3_top_h1">Dowiedz</h1>
+    	<h1> się więcej, </h1>
+    	<h1> zobacz nasze</h1>
+    	<h1> zadania!</h1>
+    </div>
+
+    <div id="stopka_main">
+    	Wszelkie prawa zastrzeżone. Opracował: Aleksander Lesiak<br>
+    	<output id="lastmod">Ostatnio modyfikowano: kiedyś napewno</output>
+    </div>
+
+    </div>
+    	
+
+<script>
+	do{
+    var name=prompt("Jak się nazywasz? ");
+        imie.innerHTML = name;
+	} while(name === 'null' || name === "")
+
+	lastmod.innerHTML = "Ostatnio modyfikowano: " + document.lastModified
+</script>
+
+<script>
+              let data1=new Date();
+              var x = data1.getFullYear();
+              var y = data1.getMonth() + 1;
+              var z = data1.getDate();
+              pdata.innerHTML = ("0" + z).substr(-2) + "/" + ("0" + y).substr(-2) + "/" + ("0" + x).substr(-2);
+</script>
+
+<script>
+		function time() {
+              let data=new Date();
+              var s = data.getSeconds();
+              var m = data.getMinutes();
+              var h = data.getHours();
+              godzina.innerHTML = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+        }
+            
+            setInterval(time, 100);
+</script>
+
+<script>
+	if (document.addEventListener) {
+    	document.addEventListener("DOMContentLoaded", function() {
+        loaded();
+    	});
+	} else if (document.attachEvent) {
+    	document.attachEvent("onreadystatechange", function() {
+        loaded();
+    	});
+	}
+
+	function loaded() {
+
+    	setInterval(loop, 300);
+    	setInterval(loop2, 700);
+	}
+
+	var x = 0;
+	var y = 0;
+
+	var titleText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JA_",
+	"> JAV_",
+	"> JAVA_",
+	"> JAVA _",
+	"> JAVA S_",
+	"> JAVA SC_",
+	"> JAVA SCR_",
+	"> JAVA SCRI_",
+	"> JAVA SCRIP_",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIPT",
+	"> JAVA SCRIPT_",
+	"> JAVA SCRIP_",
+	"> JAVA SCRI_",
+	"> JAVA SCR_",
+	"> JAVA SC_",
+	"> JAVA S_",
+	"> JAVA _",
+	"> JAVA_",
+	"> JAV_",
+	"> JA_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> ",
+	">_",
+	">"];
+
+	var jsText = [ 
+	">_",
+	"> ",
+	">_",
+	"> _",
+	"> J_",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> JS ",
+	"> JS_",
+	"> J_",
+	"> _",
+	">_",
+	"> "];
+
+	function loop() {
+
+    document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+	}
+
+	function loop2() {
+
+	js.innerHTML = jsText[y++%jsText.length];
+	}
+</script>
+
+</body>
+
+</html>
